@@ -10,20 +10,21 @@ public:
 	};
 
 	Baby(string s, int w) { // constructor
-		// TO BE COMPLETED
+        	name = s;           //copy the name and weight
+      		weight = w;
 	}
 
 	// a "getter" method
-	int getWeight() {
-		return -1; // TO BE COMPLETED
+	int getWeight() {       //return the weight
+		return weight;
 	}
 
 	// a "getter" method
 	string getName() {
-		return "COMPLETE ME"; // TO BE COMPLETED
+		return name;        //return the name
 	}
 
 private:
-	string name;
-	int weight;
+	string name;    //store the name
+	int weight;     //store the weight
 };
