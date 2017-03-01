@@ -58,7 +58,6 @@ public:
                 else{
                     check = false;                          //set check to be false if it does not match
                 }
-                
             }
             if(check == false)          		//if check is still false after searching
             {
@@ -86,24 +85,24 @@ public:
 
 	// return the number of babies who had birth weight < 2500 grams
 	int numberOfBabiesWithLowBirthWeight() {
-        int underWeight = 0;                    		//store under weight baby count
-        for(int i =0; i<length; i++ )           		//loop through the list name
-        {
-            if(listWeight[i]<2500)             			 //compare the weight and update the count
-                underWeight = underWeight+1;
-        }
+        	int underWeight = 0;                    		//store under weight baby count
+       		for(int i =0; i<length; i++ )           		//loop through the list name
+        	{
+            		if(listWeight[i]<2500)             			 //compare the weight and update the count
+                	underWeight = underWeight+1;
+        	}
 		return underWeight;                  	   //how many babies are under 2500 grams
 	}
 
 	// return the number of babies who have the name contained in string s
 	int numberOfBabiesWithName(string s) {
         int numBabies = 0;                  			//store repeated name count
-        for(int i=0; i<length; i++)       			  //loop through the list name
-        {
-            if(s == listName[i])           			 //compare the name and update the count
-                numBabies = numBabies+1;
-        }
-        return numBabies;                  		 //return the count
+        	for(int i=0; i<length; i++)       			  //loop through the list name
+       		{
+            		if(s == listName[i])           			 //compare the name and update the count
+               		 numBabies = numBabies+1;
+        	}
+        	return numBabies;                  		 //return the count
 	}
 
 private:
